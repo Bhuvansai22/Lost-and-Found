@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PESCE Lost and Found</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <div class="box" id="box">
+        <div class="logo-content">
+          <img id="logo" src="logo.svg" alt="logo" />
+          <div class="logo-name">
+            <h4>PESCE</h4>
+            <p>Lost & Found</p>
+          </div>
+        </div>
+        <div id="menu-toggle">☰</div>
+        <div id="items">
+          <ul id="header-content">
+            <li><a href="#">Home</a></li>
+            <li><a href="#Lost-items">Lost</a></li>
+            <li><a href="#Report-Lost">Report Lost</a></li>
+            <li><a href="#found-items-section">Found</a></li>
+            <li><a href="#Report-Found">Report Found</a></li>
+            <li><a href="#Profile">Profile</a></li>
+            <div class="loginid">
+              <button id="login">Login</button>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home">
+        <div id="left-main">
+          <p id="heading">Find & <br />Recover <br /><span>With Ease</span></p>
+          <p>
+            Experience effortless recovery with our dedicated lost and found
+            service.
+          </p>
+        </div>
+        <div id="right-main">
+          <div class="btns">
+            <button id="lost" type="submit">
+              Lost <img src="lost.svg" alt="lost" />
+            </button>
+            <button id="found" type="submit">
+              Found <img src="found.svg" alt="found" />
+            </button>
+          </div>
+
+          <div class="sample-img">
+            <img id="s1" src="s1.svg" alt="random-image" />
+            <img id="s2" src="s2.svg" alt="random-image" />
+          </div>
+        </div>
+      </section>
+
+      <section id="Lost-items">
+        <h2 id="losthead"><span>Lost Items</span></h2>
+        <div class="lost-cont">
+          <div class="search-bar">
+            <div class="search-content">
+              <div id="search-menu-toggle">☰</div>
+              <p id="search-item">Item Name</p>
+            </div>
+            <img id="search-icon" src="search.svg" alt="" />
+          </div>
+        </div>
+        <button class="lost-item" id="lost-btn1" type="submit">
+          Report <img src="lost.svg" alt="lost" />
+        </button>
+
+        <div id="cards" class="cards">
+          <div class="lost-cards">
+            <h5 id="card-head">Item Name</h5>
+            <h6 id="card-head1">Date</h6>
+            <div class="card-img">
+              <img id="sample-img" src="card.svg" alt="" />
+            </div>
+            <p id="card-foot">Title</p>
+            <h6 id="card-foot1">Location</h6>
+            <p class="foot-cont">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugit
+              dolores aspernatur.
+            </p>
+            <button id="contact">Contact</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="Report-Lost">
+        <h2 id="Reportlosthead"><span>Report Lost Item</span></h2>
+
+        <div class="reportform">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter your name" />
+
+          <label for="item">Item Name:</label>
+          <input type="text" id="item" placeholder="Enter item name" />
+
+          <label for="location">Location:</label>
+          <input type="text" id="location" placeholder="Enter location" />
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" />
+
+          <label for="description">Item Description:</label>
+          <textarea
+            id="description"
+            placeholder="Enter item description"
+          ></textarea>
+
+          <label for="photo">Upload Photo:</label>
+          <input type="file" id="photo" accept="image/*" />
+
+          <div class="form-buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </div>
+      </section>
+      <section id="found-items-section">
+        <h2 class="foundhead"><span>Found Items</span></h2>
+
+        <div class="found-cont">
+          <div class="search-bar">
+            <div class="search-content">
+              <div class="search-menu-toggle">☰</div>
+              <p class="search-item">Item Name</p>
+            </div>
+            <img class="search-icon" src="search.svg" alt="search" />
+          </div>
+        </div>
+
+        <button class="found-item-btn" id="found-item-btn" type="submit">
+          Report <img src="found.svg" alt="found" />
+        </button>
+
+        <div id="found-cards" class="cards">
+          <div class="found-cards">
+            <h5 class="found-card-head">Item Name</h5>
+            <h6 class="found-card-head1">Date</h6>
+            <div class="found-card-img">
+              <img class="sample-img" src="card.svg" alt="item" />
+            </div>
+            <p class="found-card-foot">Title</p>
+            <h6 class="found-card-foot1">Location</h6>
+            <p class="foot-cont">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="found-contact-btn">Contact</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="Report-Found">
+        <h2 id="Reportfoundhead"><span>Report Found Item</span></h2>
+
+        <div class="reportform-found">
+          <label for="fname">Name:</label>
+          <input type="text" id="fname" placeholder="Enter your name" />
+
+          <label for="fitem">Item Name:</label>
+          <input type="text" id="fitem" placeholder="Enter item name" />
+
+          <label for="flocation">Location:</label>
+          <input type="text" id="flocation" placeholder="Enter location" />
+
+          <label for="fdate">Date:</label>
+          <input type="date" id="fdate" />
+
+          <label for="fdescription">Item Description:</label>
+          <textarea
+            id="fdescription"
+            placeholder="Enter item description"
+          ></textarea>
+
+          <label for="fphoto">Upload Photo:</label>
+          <input type="file" id="fphoto" accept="image/*" />
+
+          <div class="form-buttons-found">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="Profile">
+        <h2><span>Profile</span></h2>
+        <div id="Profile-detail">
+          <div class="profile-avatar">
+            <img
+              src="https://img.icons8.com/ios-filled/100/737373/user-male-circle.png"
+              alt="User Avatar"
+            />
+          </div>
+
+          <div class="profile-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Name" />
+
+            <label for="id">Id Number</label>
+            <input type="text" id="id" placeholder="Id Number" />
+
+            <label for="faculty">Faculty</label>
+            <input type="text" id="faculty" placeholder="Faculty" />
+
+            <label for="contact">Contact Number</label>
+            <input type="text" id="contact" placeholder="Contact Number" />
+          </div>
+
+          <div class="profile-buttons">
+            <button class="edit-btn">Edit Profile</button>
+            <button class="save-btn">Save</button>
+            <button class="cancel-btn">Cancel</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-box">
+        <img height="130px" src="logo.svg" alt="" id="footer-logo" />
+        <div class="footer-content">
+          <div class="site">
+            <p id="Footer-site">Site</p>
+            <ul id="footer-ul">
+              <li><a href="#Lost-items">Lost</a></li>
+              <li><a href="#Report-Lost">Report Lost</a></li>
+              <li><a href="#found-items-section">Found</a></li>
+              <li><a href="#Report-Found">Report Found</a></li>
+            </ul>
+          </div>
+
+          <div class="Help">
+            <p id="Footer-Help">Help</p>
+            <ul id="footer-ul">
+              <li><a href="#">Customer Support</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="links">
+            <p id="Footer-Links">Links</p>
+            <ul id="footer-ul">
+              <li><a href="#">Linkedin</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">About us</a></li>
+            </ul>
+          </div>
+
+          <div class="contact">
+            <p id="Footer-Contact">Contact</p>
+            <ul id="footer-ul">
+              <li><a href="tel:+919742247556">📞 97422 47556</a></li>
+              <li>
+                <a href="mailto:bhuvan9259@gmail.com">✉️ bhuvan9259@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <center>
+        <h5>&copy; Copyright 2025 Lost & Found</h5>
+        <h5>All Rights Reserved</h5>
+      </center>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

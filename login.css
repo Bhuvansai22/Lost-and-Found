@@ -1,0 +1,116 @@
+body {
+      font-family: sans-serif;
+      background: linear-gradient(90deg, #ffe9e9 0%, #edffbb 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 24px;
+    }
+
+    .login-container input {
+      width: 90%;
+      padding: 12px 15px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+      outline: none;
+      transition: border 0.3s;
+    }
+
+    .login-container input:focus {
+      border-color: #0077ff;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      background: #0077ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .login-container button:hover {
+      background: #005fcc;
+    }
+
+    .login-container .links {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .login-container .links a {
+      color: #0077ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .login-container .links a:hover {
+      text-decoration: underline;
+    }
+
+    .social-login {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .social-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .google-btn {
+      background: #fff;
+      border: 1px solid #ccc;
+    }
+
+    .facebook-btn {
+      background: #1877f2;
+      color: white;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .login-container {
+        width: 60%;
+      }
+    }
