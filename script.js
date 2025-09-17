@@ -25,7 +25,7 @@
     <h5 id="card-head">${Itemname}</h5>
     <h6 id="card-head1">${Date}</h6>
    <div class="card-img">
-    <img id="sample-img" src="card.svg" alt="">
+    <img id="sample-img" src="images/card.svg" alt="">
    </div>
     <p id="card-foot">${Title}</p>
     <h6 id="card-foot1">${Location}</h6>
@@ -49,7 +49,7 @@
     <h5 class="found-card-head">${Itemname}</h5>
     <h6 class="found-card-head1">${Date}</h6>
     <div class="found-card-img">
-      <img class="sample-img" src="card.svg" alt="">
+      <img class="sample-img" src="images/card.svg" alt="">
     </div>
     <p class="found-card-foot">${Title}</p>
     <h6 class="found-card-foot1">${Location}</h6>
